@@ -214,7 +214,7 @@ body {
   font-size: 0.813rem;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 56.25rem) {
   body {
     font-size: 1rem;
     line-height: 1.75;
@@ -273,12 +273,12 @@ body {
   }
 
   .error-message {
-    margin-top: 0.5rem;
-    margin-left: 2rem;
+    margin-block-start: 0.5rem;
+    margin-inline-start: 2rem;
   }
 }
 
-@media (max-width: 899px) and (max-width: 900px) {
+@media (max-width: 56.188rem) {
   body {
     font-size: 0.875rem;
     line-height: 1.6;
@@ -336,8 +336,8 @@ body {
   }
 
   .error-message {
-    margin-top: 0.25rem;
-    margin-left: 1.5rem;
+    margin-block-start: 0.25rem;
+    margin-inline-start: 1.5rem;
     text-align: left;
   }
 }
