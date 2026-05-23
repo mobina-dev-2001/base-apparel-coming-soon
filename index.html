@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./public/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./index.css">
+
+  <title>Base Apparel | Coming Soon</title>
+</head>
+
+<body>
+  <main class="main">
+    <div class="logo-container">
+      <img src="./public/images/logo.svg" alt="Base Apparel" class="logo">
+    </div>
+
+    <picture class="picture">
+      <source media="(min-width: 900px)" srcset="./public/images/hero-desktop.jpg">
+      <img src="./public/images/hero-mobile.jpg" alt="Woman in orange shirt" class="hero-image">
+    </picture>
+
+    <div class="content">
+      <h1 class="heading">
+        <span class="heading-light">We're</span>
+        <span class="heading-bold">coming soon</span>
+      </h1>
+
+      <p class="description">
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+
+      <form id="emailForm" class="form" novalidate>
+        <div class="form-group">
+          <label for="email" class="sr-only">Email Address</label>
+
+          <input 
+          type="email" 
+          id="email" 
+          placeholder="Email Address" 
+          aria-invalid="false"
+          aria-describedby="errorMessage" 
+          class="input"
+          required>
+
+          <img src="./public/images/icon-error.svg" alt="" aria-hidden="true" class="error-icon">
+
+          <button type="submit" aria-label="Subscribe to newsletter" class="button">
+            <img src="./public/images/icon-arrow.svg" alt="" aria-hidden="true">
+          </button>
+        </div>
+
+        <p id="errorMessage" role="alert" class="error-message" />
+      </form>
+    </div>
+  </main>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
